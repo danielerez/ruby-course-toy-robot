@@ -19,7 +19,7 @@ class Parser
     if command == nil || COMMANDS.index(command.to_sym) == nil
       raise ArgumentError.new('Invalid command: %s' % command)
     end
-    if command != 'PLACE' && !@board.initialized?
+    if command != 'PLACE' && !@board.placed?
       raise ArgumentError.new('Robot is not placed yet!')
     end
   end

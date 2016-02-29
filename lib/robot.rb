@@ -3,8 +3,6 @@ require './lib/parser'
 
 class Robot
   def initialize()
-    puts "Welcome to Toy Robot Simulator"
-
     @board = Board.new(5, 5)
     @parser = Parser.new(@board)
   end
